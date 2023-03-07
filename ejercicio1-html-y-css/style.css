@@ -1,6 +1,23 @@
-.titulo1{
+.titulo_principal{
     font-size: 3em;
+    color: #ff3300;
+    transition: all .5s ease-in;
+}
+.titulo_principal::before{
+    content: "";
+    position: absolute;
+    background: #ff3300;
+    width: 10%;
+    border-radius: 5px;
+    top: 2em;
+    bottom: 11.5em;
+    left: 2.5em;
+    transition: all .5s ease-in;
+}
+.titulo_principal::before:hover{
+    width: 30%;
 }
 .titulo2, .titulo3{
     font-size: 1.5em;
+    
 }
